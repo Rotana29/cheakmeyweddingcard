@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ការអញ្ជើញអាពាហ៍ពិពាហ៍</title>
+    <style>
+        body {
+            font-family: 'Khmer OS Battambang', serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://beachweddingsalabama.com/wp-content/uploads/2023/10/winterspecials.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #5a3e36;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .logo {
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        .header {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        .subheader {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .couple-photo {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #5a3e36;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+        }
+        .details, .rsvp, .footer {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #a09a9a;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideDown {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="page1">
+        <img src="https://i.etsystatic.com/13472262/r/il/ea7281/3063156267/il_fullxfull.3063156267_a8xt.jpg" alt="Wedding Logo" class="logo" width="150">
+        <div class="header">សូមអញ្ជើញ!</div>
+        <div class="subheader">ចូលរួមអបអរសាទរមង្គលការ</div>
+        <button class="button" onclick="showInvitation()">បើកការអញ្ជើញ</button>
+    </div>
+
+    <div class="container" id="page2" style="display: none;">
+        <img src="https://i.etsystatic.com/13472262/r/il/ea7281/3063156267/il_fullxfull.3063156267_a8xt.jpg" alt="Wedding Logo" class="logo" width="150">
+        <div class="header">សូមអញ្ជើញ!</div>
+        <div class="subheader">ចូលរួមអបអរសាទរមង្គលការ</div>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/wedding-wishes-bride-and-groom-surrounded-by-their-friends-66abb2eac5cde.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*" alt="Couple Photo" class="couple-photo">
+        <h1 id="couple-nam">អេមីលី & ជេម</h1>
+        <p class="details" id="date">ថ្ងៃសៅរ៍ ទី ១៥ ខែមិថុនា ឆ្នាំ ២០២៤</p>
+        <p class="details" id="time">ម៉ោង ៤:០០ រសៀល</p>
+        <p class="details" id="venue">សាលារៀបចំមង្គល Rose Garden</p>
+        <p class="details" id="address">ផ្លូវប្លូមសុម លេខ ១២៣, ស្រង់ហ្វីល</p>
+        <p class="rsvp">សូមបញ្ជាក់ការចូលរួមមុន <span id="rsvp-date">ថ្ងៃទី ១៥ ខែឧសភា ឆ្នាំ ២០២៤</span></p>
+        <p class="rsvp">ទំនាក់ទំនង៖ <span id="contact">emilyandjameswedding@email.com</span></p>
+        <div class="footer">យើងរីករាយចង់អញ្ជើញអ្នកចូលរួមជាមួយយើង!</div>
+    </div>
+
+    <script>
+        function showInvitation() {
+            document.getElementById('page1').style.display = 'none';
+            document.getElementById('page2').style.display = 'block';
+        }
+
+        const data = {
+            coupleName: "អេមីលី & ជេម",
+            date: "ថ្ងៃសៅរ៍ ទី ១៥ ខែមិថុនា ឆ្នាំ ២០២៤",
+            time: "ម៉ោង ៤:០០ ល្ងាច",
+            venue: "សាលារៀបចំមង្គល Rose Garden",
+            address: "ផ្លូវប្លូមសុម លេខ ១២៣, ស្រង់ហ្វីល",
+            rsvpDate: "ថ្ងៃទី ១៥ ខែឧសភា ឆ្នាំ ២០២៤",
+            contact: "emilyandjameswedding@email.com"
+        };
+
+        document.getElementById('couple-name').innerText = data.coupleName;
+        document.getElementById('date').innerText = data.date;
+        document.getElementById('time').innerText = data.time;
+        document.getElementById('venue').innerText = data.venue;
+        document.getElementById('address').innerText = data.address;
+        document.getElementById('rsvp-date').innerText = data.rsvpDate;
+        document.getElementById('contact').innerText = data.contact;
+    </script>
+</body>
+</html>
