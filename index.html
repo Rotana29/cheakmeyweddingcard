@@ -45,6 +45,7 @@
     /* Welcome Page */
     .welcome h1 {
       font-size: 36px;
+      font-family: KhmerOsMuol;
       color: #b76e79;
       animation: fadeInText 2s ease-in-out;
       animation: bounce 3s infinite;
@@ -85,6 +86,11 @@
       animation: bounce 3s infinite;
     }  
 
+    .invitation h2{
+      font-family: KhmerOsMuol;
+      color: #b76e79;
+    }
+
     /* Scroll Animation */
     .hidden {
       opacity: 0;
@@ -105,7 +111,7 @@
     }
     
     .couple h2 {
-      font-family: Bokor;
+      font-family: KhmerBanteaySrey;
       color: #b4750f;
       text-shadow: 0 2px 4px #cbc9c9;
       animation: fadeInText 2s ease-in-out;
@@ -173,6 +179,15 @@
       display: none;
     }
     
+    /*Fonts*/
+    @font-face {
+      font-family: KhmerBanteaySrey;
+      src: url(fonts/KhmerBanteaySrey.ttf);
+    }
+    @font-face {
+      font-family: KhmerOsMuol;
+      src: url(fonts/KhmerOSmuol.ttf);
+    }
 
 
     /* Animations */
@@ -233,8 +248,8 @@
     <div id="content" class="content">
       <!-- Welcome Page -->
       <div id="welcome-page" class="welcome">
-        <h1>សូមស្វាគមន៍!</h1>
-        <p>សូមគោរពអញ្ជើញឯកឧត្តម លោកជំទាំវ លោកលោកស្រី អ្នកនាងកញ្ញា ភ្ញៀវកិត្តយស ចូលរួមពិធីមង្គលការរបស់យើង</p>
+        <h1>សូមគោរពអញ្ជើញ</h1>
+        <p>ឯកឧត្តម លោកជំទាវ លោកឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា និងប្រិយមិត្តទាំងអស់គ្នា ចូលរួមជាភ្ញៀវកិត្តយសក្នុងពិធីមង្គលការរបស់កូនប្រុសស្រីយើងខ្ញុំ</p>
         <p>ចុចប៊ូតុងខាងក្រោមដើម្បីមើលព័ត៌មានលម្អិត</p>
         <button onclick="showInvitation()">លិខិតអញ្ជើញ</button>
       </div>
@@ -257,7 +272,7 @@
         </div>
         <div class="details">
           <h1>សូមគោរពអញ្ជើញ</h1>
-          <p>យើងខ្ញុំ សូមគោរពអញ្ជើញទ្រង់ឯកឧត្តម លោកជំទាវ លោកឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា និងប្រិយមិត្តទាំងអស់គ្មា អញ្ជើញចូលរួមជាភ្ញៀវកិត្តយសក្នុងពិធីមង្គលការរបស់កូនប្រុសស្រីយើងខ្ញុំ។
+          <p>យើងខ្ញុំ សូមគោរពអញ្ជើញទ្រង់ឯកឧត្តម លោកជំទាវ លោកឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា និងប្រិយមិត្តទាំងអស់គ្នា អញ្ជើញចូលរួមជាភ្ញៀវកិត្តយសក្នុងពិធីមង្គលការរបស់កូនប្រុសស្រីយើងខ្ញុំ។
              សូមអរគុណ! 
           </p>
           <div class="calendar">
