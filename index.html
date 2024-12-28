@@ -27,12 +27,14 @@
       justify-content: center;
       text-align: center;
       animation: fadeIn 1s;
+
+      
     }
 
     .content {
       width: 80%;
       max-width: 800px;
-      hieght: 100%;
+      
       padding: 10px;
       background-color: #fff9;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -83,6 +85,18 @@
       animation: bounce 3s infinite;
     }  
 
+    /* Scroll Animation */
+    .hidden {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .couple {
       display: flex;
       justify-content: center;
@@ -91,18 +105,18 @@
     }
     
     .couple h2 {
-      
-      color: #fffff;
+      font-family: Moulpali;
+      color: #b4750f;
+      text-shadow: 0 2px 4px #cbc9c9;
       animation: fadeInText 2s ease-in-out;
       
     }
-
     .couple img {
       width: 120px;
-      height: 120px;
-      border-radius: 100%;
-      border: 2px solid #fffff;
-      transition: transform 0.3s;
+      height: 160px;
+      border-radius: 5%;
+      border: 1px solid #ffffff;
+      transition: transform 0.2s;
     }
 
     .couple img:hover {
@@ -119,7 +133,15 @@
     }
 
     .calendar, .location {
-      margin: 20px 0;
+      margin: 10px 0;
+    }
+
+    .calendar img{
+            width: 100%;
+    }
+
+    .location img{
+      width: 100%;
     }
 
     .back-btn {
@@ -219,43 +241,43 @@
 
       <!-- Invitation Page -->
       <div id="invitation-page" class="hidden invitation">
-        <h1>ពិធីអាពាហ៍ពិពាហ៍</h1>
+        <h2>សិរីមង្គលអាពាហ៍ពិពាហ៍</h2>
         <div class="couple">
           <div>
             <img src="https://scontent.fpnh5-6.fna.fbcdn.net/v/t39.30808-6/468588305_2189427708110680_4771136191120570701_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGojIW99__Sr-68eR3VQlrjcN0M_wq71Uhw3Qz_CrvVSBHYG7E97rWGZdZx9qfXkIMIXwlGyjhWDDBIUIo0O5_i&_nc_ohc=iV0cLGWh4wMQ7kNvgGl7z8V&_nc_oc=AdiK60Ac2uHpyLwppmiLl_WHL0Rqv7bgMpcp9b4WXOA2AQYpZSCzF3DFwrEUzx-RxAI&_nc_zt=23&_nc_ht=scontent.fpnh5-6.fna&_nc_gid=Ador_WeWEUVE-XIV92v0qkY&oh=00_AYDDhhuWPUBLkrcBoNSvNPtr184jpiWgFel-hbrawZcaBQ&oe=6774CB10" alt="Groom">
-            <h2 >ហួរ ចន្ទរឹទ្ធី</h2>
+            <p>កូនប្រុសនាម</p>
+            <h2 >ហ៊ួរ ចន្ទរឹទ្ធី</h2>
           </div>
           <div>
             <img src="https://scontent.fpnh5-4.fna.fbcdn.net/v/t39.30808-6/468493824_2189427798110671_102335461142901764_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH3sHudGmWtwECx1AJk4HNelTHi4d_iFNmVMeLh3-IU2aqL_CgooaCXm2H0Lue0wTW44jYhkBLBdKsbTg9eMxf_&_nc_ohc=Kae0m-nRSmwQ7kNvgEEzrkS&_nc_oc=AdirxfKbO-I5eImB13OMz_p0vRIxRk4zUn52896ex45AS0wnxXuzaSXB1gAOaakugsc&_nc_zt=23&_nc_ht=scontent.fpnh5-4.fna&_nc_gid=Aic_Yt19uHSYFmfqfAwURcA&oh=00_AYApmIdmzAk-P0lorP_b2k1vKNbajTUs9fqyR6wj_Ry9HA&oe=6774AB06" alt="Bride">
+            <p>កូនស្រីនាម</p>
             <h2>អ៊ុត ឆៀកម៉ី</h2>
             
           </div>
         </div>
         <div class="details">
-          <h1>កម្មវិធី</h1>
+          <h1>សូមគោរពអញ្ជើញ</h1>
+          <p>យើងខ្ញុំ សូមគោរពអញ្ជើញទ្រង់ឯកឧត្តម លោកជំទាវ លោកឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា និងប្រិយមិត្តទាំងអស់គ្មា អញ្ជើញចូលរួមជាភ្ញៀវកិត្តយសក្នុងពិធីមង្គលការរបស់កូនប្រុសស្រីយើងខ្ញុំ។
+             សូមអរគុណ! 
+          </p>
           <div class="calendar">
             <h3>ថ្ងៃប្រារព្ធពិធី</h3>
-            <p>ថ្ងៃសៅរ៍, ១៥ ខែមករា ឆ្នាំ២០២៤</p>
-            <p>ម៉ោង ០៦:៣០ ព្រឹក ដល់ ១១:៥៩ យប់</p>
+            <img src="images/5.gif">
+            <p>ថ្ងៃអាទិត្យ ទី២៣ ខែកុម្ភៈ ឆ្នាំ ២០២៥ </p>
+            <p>វេលាម៉ោង ៥:០០ល្ងាច</p>
           </div>
           <div class="location">
-            <h3>ទីតាំង:</h3>
-            <p>សាលមង្គលភោជនីយដ្ឋាន ភ្នំពេញ</p>
+            <h3>ទីតាំង</h3>
+            <a href="https://maps.app.goo.gl/FJCn7DbHybKswZ8N8?g_st=com.google.maps.preview.copy">នៅគេហដ្ឋានខាស្រី ភូមិកោងកាងទី៣ ឃុំកោងកាង ស្រុកពញាក្រែក ខេត្តត្បូងឃ្មុំ</a>
+            
+            <h3>វិចិត្រសាល</h3>
+            <img src="images/1.gif">
+            <img src="images/4.gif">
+            <img src="images/2.gif">
           </div>
-          <h3>ពិធីពិសេស</h3>
-          <p>ពិធីសែស និងអភិសេកគូស្នេហ៍</p>
+          
         </div>
-        <h2>Wedding Photo Collection</h2>
-  <div class="gallery">
-    <!-- Add your wedding photo URLs here -->
-    <img src="photo1.jpg" alt="Wedding Photo 1" />
-    <img src="photo2.jpg" alt="Wedding Photo 2" />
-    <img src="photo3.jpg" alt="Wedding Photo 3" />
-    <img src="photo4.jpg" alt="Wedding Photo 4" />
-    <img src="photo5.jpg" alt="Wedding Photo 5" />
-    <img src="photo6.jpg" alt="Wedding Photo 6" />
-  </div>
-        <button class="back-btn" onclick="showWelcome()">ត្រឡប់ទៅមុខ</button>
+                <button class="back-btn" onclick="showWelcome()">ត្រឡប់ទៅមុខ</button>
       </div>
     </div>
   </div>
@@ -272,6 +294,9 @@
       document.getElementById('invitation-page').classList.add('hidden');
       document.getElementById('welcome-page').classList.remove('hidden');
     }
+
+
+    
   </script>
 </body>
 </html>
